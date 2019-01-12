@@ -1,11 +1,20 @@
 {
   "expo": {
     "name": "pomodoro-todo",
-    "description": "This project is really great.",
+    "description": "React Native 101 Express Capstone Project: Pomodoro Todo (AsyncStorage Edition)",
     "slug": "pomodoro-todo",
     "privacy": "public",
     "sdkVersion": "31.0.0",
-    "platforms": ["ios", "android"],
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.grandnexus.pomodorotodo"
+    },
+    "android": {
+      "package": "com.grandnexus.pomodorotodo"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,8 +29,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    }
+    "githubUrl": "https://github.com/grandnexus/reactnative101-pomodoro-todo"
   }
 }
