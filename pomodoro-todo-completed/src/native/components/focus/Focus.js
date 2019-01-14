@@ -105,13 +105,9 @@ class Focus extends Component {
     this.setState({
       isTimerStarted: true
     });
+
+    let pomodoroTime = moment().add('25', 'minutes').add('1', 'seconds');
     this.interval = setInterval(() => {
-      let pomodoroTime;
-      if (this.state.remainingTime == null) {
-        pomodoroTime = moment().add('25', 'minutes');
-      } else {
-        pomodoroTime = this.state.remainingTime.subtract('1000', 'milliseconds');
-      }
       const timeDiff = pomodoroTime.diff(moment());
       const timeRemainingTime = moment.duration(timeDiff, 'milliseconds');
 
